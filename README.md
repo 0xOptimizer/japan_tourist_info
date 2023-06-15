@@ -64,6 +64,25 @@ The styling is also based on a design trend called "Glassmorphism" to create a m
 
 I've also implemented layouts (resources/views/layouts) using Laravel's Blade engine so that repetition is cut and allows a more streamline process for future development.
 
+### Forced Limitations
+
+In accordance to the requirements, the selection box for the cities are locked into just 5:
+
+(app/Http/Controllers/WeatherController.php)
+```php
+$data['cities'] = [
+    'tokyo' => 'Tokyo',
+    'yokohama' => 'Yokohama',
+    'osaka' => 'Osaka',
+    'sapporo' => 'Sapporo',
+    'nagoya' => 'Nagoya',
+];
+```
+
+However the system could actually be forced to not follow this limitation and accomodate all Japanese cities and places as provided in the `VenueService` and `WeatherService` services (app/Services). To lift this, remove the "JP" tag in both of them. The number of venues could also be modified from the default 12 to a number that you wish that complies with FourSquare's API.
+
+### General
+
 In the development of this application, I aimed to adhere to the best practices and standards for all utilized languages: PHP, HTML5, CSS3, and JavaScript. While some speed-optimized decisions, like occasional inline styling, were necessary, I endeavored to keep the code clean, readable, and maintainable. This approach allows other developers an easy path to understand, contribute to, and deploy the project.
 
 ## Getting Started
@@ -84,6 +103,6 @@ FOURSQUARE_API_KEY=[Your FourSquare API key]
 6. Start the local development server by running `php artisan serve`.
 7. Visit http://localhost:8000 in your browser to access the application.
 
-Please note that this project doesn't require a database connection.
+Please note that this project doesn't require a database connection. You also don't need an API key for the AI analysis as it is hosted on my own Linux server.
 
 You can also access the live version of the application here: https://mochi.tewi.club/location/.
