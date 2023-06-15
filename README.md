@@ -11,7 +11,7 @@ This project is a simple Laravel 8 app, created within 24 hours as part of a job
 - Styling based on the modern "Glassmorphism" trend, utilizing a basic color palette derived from color theory
 
 ## Tech Stack
-The design and architecture of this application have been carefully thought out to ensure a clean, scalable structure, which is evident in the choice of the tech stack.
+The design and architecture of this application have been carefully thought out to ensure a clean, scalable structure, for use in future continuation of the project.
 
 ### Backend
 Laravel 8 serves as the backbone of this application, with a design philosophy that heavily leans towards compartmentalization. The logic for different API handlers has been encapsulated into distinct services, promoting scalability and ease of modification.
@@ -60,6 +60,10 @@ This approach of compartmentalizing functionality into separate services, combin
 ### Frontend
 The front-end leverages Bootstrap 5, bundled with jQuery, to ensure out-of-the-box responsiveness. With Bootstrap's vast selection of easily customizable components, it allows for rapid development without compromising on design or user experience.
 
+The styling is also based on a design trend called "Glassmorphism" to create a modern feel despite being a simple application.
+
+I've also implemented layouts (resources/views/layouts) using Laravel's Blade engine so that repetition is cut and allows a more streamline process for future development.
+
 In the development of this application, I aimed to adhere to the best practices and standards for all utilized languages: PHP, HTML5, CSS3, and JavaScript. While some speed-optimized decisions, like occasional inline styling, were necessary, I endeavored to keep the code clean, readable, and maintainable. This approach allows other developers an easy path to understand, contribute to, and deploy the project.
 
 ## Getting Started
@@ -72,7 +76,7 @@ Follow these steps to get the project running:
 2. Clone this repository to your local machine using `git clone https://github.com/username/japan-tourist-info`.
 3. Navigate to the project directory in your terminal.
 4. Run `composer install` to install the project dependencies.
-5. Register for API keys from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up) and [FourSquare](https://developer.foursquare.com/docs/places-api/getting-started/), and add these to your .env file:
+5. Register for API keys from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up) and [FourSquare](https://foursquare.com/developers/signup), and add these to your .env file:
 ```
 OPEN_WEATHER_MAP_API_KEY=[Your OpenWeatherMap API key]
 FOURSQUARE_API_KEY=[Your FourSquare API key]
