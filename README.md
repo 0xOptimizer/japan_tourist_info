@@ -92,7 +92,7 @@ Before getting started, you'll need to have PHP 7.4 or higher installed on your 
 Follow these steps to get the project running:
 
 1. Install Composer. You can download it [here](https://getcomposer.org/download/).
-2. Clone this repository to your local machine using `git clone https://github.com/username/japan-tourist-info`.
+2. Clone this repository to your local machine using `git clone https://github.com/0xOptimizer/japan_tourist_info`.
 3. Navigate to the project directory in your terminal.
 4. Run `composer install` to install the project dependencies.
 5. Register for API keys from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up) and [FourSquare](https://foursquare.com/developers/signup), and add these to your .env file:
